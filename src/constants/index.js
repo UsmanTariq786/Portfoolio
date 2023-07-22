@@ -46,15 +46,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
+    title: 'Frontend Developement',
     icon: frontend,
   },
   {
-    title: 'Backend Developer',
+    title: 'API Integration',
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
+    title: 'Third Party Integrations',
     icon: ux,
   },
   {
@@ -76,10 +76,10 @@ const technologies = [
     name: 'JavaScript',
     icon: javascript,
   },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
+  // {
+  //   name: 'TypeScript',
+  //   icon: typescript,
+  // },
   {
     name: 'React JS',
     icon: reactjs,
@@ -96,18 +96,7 @@ const technologies = [
     name: 'Node JS',
     icon: nodejs,
   },
-  {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
-    name: 'graphql',
-    icon: graphql,
-  },
-  {
-    name: 'postgresql',
-    icon: postgresql,
-  },
+
   {
     name: 'git',
     icon: git,
@@ -116,40 +105,36 @@ const technologies = [
     name: 'figma',
     icon: figma,
   },
-  {
-    name: 'docker',
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'Personal/Commercial Projects',
+    company_name: 'Full stack',
     icon: coverhunt,
     iconBg: '#333333',
     date: 'Aug 2021 - Feb 2022',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
+    title: 'Trainee Software Engineer',
+    company_name: 'Alfain Technologies',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Aug 2022 - Nov 2022',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
+    title: 'Associate Software Engineer',
+    company_name: 'Alfain Technologies',
     icon: kelhel,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'Dec 2022 - June 2023',
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
+    title: 'Software Engineer',
+    company_name: 'Alfain Technologies',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'july 2023 - Present',
   },
 ];
 

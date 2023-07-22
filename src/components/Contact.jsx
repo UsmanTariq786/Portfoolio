@@ -5,6 +5,7 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
   const formRef = useRef();
@@ -29,21 +30,21 @@ const Contact = () => {
     //click on create a new template then click on save.
     emailjs
       .send(
-        'serviceID', // paste your ServiceID here (you'll get one when your service is created).
-        'templateID', // paste your TemplateID here (you'll find it under email templates).
+        'service_wmpa5be', // paste your ServiceID here (you'll get one when your service is created).
+        'template_bgij4z7', // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
           to_name: 'YourName', // put your name here.
           from_email: form.email,
-          to_email: 'youremail@gmail.com', //put your email here.
+          to_email: 'usmantariq0896@gmail.com', //put your email here.
           message: form.message,
         },
-        'yourpublickey' //paste your Public Key here. You'll get it in your profile section.
+        'uvAWqR8GCZu8LRfSq' //paste your Public Key here. You'll get it in your profile section.
       )
       .then(
         () => {
           setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
+          toast.success("Thank you. I will get back to you as soon as possible.")
 
           setForm({
             name: '',
@@ -54,10 +55,12 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.log(error);
-          alert('Something went wrong. Please try again.');
+          toast.error("Something went wrong. Please try again.")
+
         }
       );
   };
+
 
   return (
     <div
@@ -145,6 +148,7 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
+      <Toaster position="bottom-left"/>
     </div>
   );
 };

@@ -37,12 +37,9 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+        As a passionate and driven software engineer, I bring over a year of industry expertise to the table. With a strong foundation in coding and a love for problem-solving, I have embarked on a journey to create innovative and efficient solutions. My dedication to staying at the forefront of technological advancements empowers me to craft software that pushes boundaries and exceeds expectations.
+
+      <br />  Throughout my career, I have collaborated with diverse teams to deliver projects that not only meet the requirements but also exceed user expectations. From developing robust applications to optimizing existing systems, I thrive on the challenges that come with each new endeavor.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
