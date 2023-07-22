@@ -28,11 +28,15 @@ const Navbar = () => {
 
           {/* if you have text you want besides your logo it comes here.
           Otherwise delete this if you don't need it. */}
-          <img
+          {/* <img
             src={logotext}
             alt="logo"
             className="sm:w-[90px] sm:h-[90px] w-[85px] h-[85px] -ml-[0.6rem] object-contain"
-          />
+          /> */}
+          <span className="text-[20px] font-bold
+                      uppercase  cursor-pointer text-eerieBlack sm:w-[90px] sm:h-[35px] w-[85px] h-[35px] -ml-[0.6rem] object-contain" >
+            usman
+          </span>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
           {navLinks.map((nav) => (
@@ -52,7 +56,7 @@ const Navbar = () => {
         <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
           {toggle ? (
             <div
-              className={`p-6 bg-flashWhite opacity-[0.98] absolute 
+              className={`p-6 bg-flashWhite opacity-[0.93] absolute 
                 top-0 left-0 w-screen h-[100vh] z-10 menu ${
                   toggle ? 'menu-open' : 'menu-close'
                 }`}>
@@ -66,20 +70,21 @@ const Navbar = () => {
               </div>
               <ul
                 className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]">
+                items-start justify-end mt-[10rem] ">
                 {navLinks.map((nav) => (
                   <li
                     id={nav.id}
                     key={nav.id}
                     className={`${
                       active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
+                    } text-[1px] font-bold  
+                      uppercase  cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);
                     }}>
                     <a href={`#${nav.id}`}>{nav.title}</a>
+                    <hr className="border-t-2 border-black"/>
                   </li>
                 ))}
               </ul>
